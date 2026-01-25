@@ -4,26 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Beginner developer's portfolio" />
     <title>Aleksei Larionov's portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>Aleksei Larionov's portfolio</h1>
+    <header class="site-header">
+  <h1 id="name">Aleksei Larionov's portfolio</h1>
+  <img src="https://github.com/MrPerfeccct/Git-tutorial/blob/main/photo_2026-01-20_21-46-41.jpg?raw=1" alt="photo">
+</header>
       <h3>Navigation map</h3>
-      <nav>
-        <ol>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Connect">Connect</a></li>
-        </ol>
-      </nav>
-    </header>
+        <nav>
+          <ul id="nav">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Connect">Connect</a></li>
+          </ul>
+        </nav>
+   
     <section id="About">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/M1_iMac_blue_model_%28cropped%29.jpg/960px-M1_iMac_blue_model_%28cropped%29.jpg"
-        width="180px"
-        height="180px"
-        alt="photo of computer"
-      />
+      
       <h2>About</h2>
       <p>
         Hello! My name is Aleksei Larionov, and I am a beginner web developer.
@@ -33,8 +37,9 @@
         to collaborate!
       </p>
     </section>
-    <section id="Experience">
-      <h2>Experience</h2>
+    <section>
+      <h2 id="Experience">Experience</h2>
+        <div class="exp-content">
       <ul>
         <li>HTML, CSS, JavaScript</li>
         <li>Git and GitHub</li>
@@ -43,13 +48,21 @@
         <li>Computer hardware basics course completed</li>
         <li>Linux basics course completed</li>
       </ul>
+      <img id="comp"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/M1_iMac_blue_model_%28cropped%29.jpg/960px-M1_iMac_blue_model_%28cropped%29.jpg"
+        width="180px"
+        height="180px"
+        alt="photo of computer"
+      />
+      </div>
     </section>
     <section id="Connect">
       <h2>Connect</h2>
       <ul>
         <li>
           <a href="mailto:1ammrperfeccct@gmail.com" rel="noopener noreferrer"
-            >Email me</a
+            ><img src="https://github.com/MrPerfeccct/Git-tutorial/blob/main/Gmail_icon_(2020).png?raw=1" alt="Gmail icon" width="20px" height="20px" /> 
+</a
           >
         </li>
         <li>
@@ -57,7 +70,8 @@
             href="https://github.com/MrPerfeccct"
             target="_blank"
             rel="noopener noreferrer"
-            >My GitHub portfolio</a
+            ><img src="https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/images.png" alt="GitHub icon" width="80px" height="20px" />
+</a
           >
         </li>
         <li>
@@ -65,7 +79,7 @@
             href="https://www.linkedin.com/in/aleksei-larionov-7a5b18323"
             target="_blank"
             rel="noopener noreferrer"
-            >LinkedIn</a
+            ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/120px-LinkedIn_logo_initials.png" alt="LinkedIn icon" width="20px" height="20px" /></a
           >
         </li>
         <li>
@@ -73,7 +87,8 @@
             href="https://www.instagram.com/1am_perfect/"
             target="_blank"
             rel="noopener noreferrer"
-            >Instagram</a
+            ><img src="https://github.com/MrPerfeccct/Git-tutorial/blob/main/Instagram-Logo.png?raw=1" alt="Instagram icon" width="45px" height="25
+            px" /></a
           >
         </li>
         <li>
@@ -81,7 +96,7 @@
             href="https://www.facebook.com/aleksei.larionov.2025"
             target="_blank"
             rel="noopener noreferrer"
-            >Facebook</a
+            ><img src="https://github.com/MrPerfeccct/Git-tutorial/blob/main/Facebook_logo_(square).png?raw=1" alt="Facebook icon" width="20px" height="20px" /></a
           >
         </li>
       </ul>
