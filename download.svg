@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" stroke="black" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter">
+
+  <!-- A -->
+  <path d="M20 60 L40 4 L60 60"></path>
+  <path d="M28 36 L52 36"></path>
+
+  <!-- L -->
+  <path d="M96 4 L96 60 L124 60"></path>
+
+  <!-- E -->
+  <path d="M156 4 L156 60"></path>
+  <path d="M156 4 L192 4"></path>
+  <path d="M156 32 L188 32"></path>
+  <path d="M156 60 L192 60"></path>
+
+  <!-- X -->
+  <path d="M224 4 L260 60"></path>
+  <path d="M260 4 L224 60"></path>
+
+</svg>
