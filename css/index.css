@@ -22,6 +22,7 @@ footer {
   background: rgba(7, 37, 47, 0.666);
   position: fixed;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   right: 0;
@@ -199,6 +200,8 @@ h3{
   url(https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/NewBack.png
 );
 height: 750px;
+background-position: center;
+overflow: hidden;
 display: flex;
 flex-direction: column;
   
@@ -217,7 +220,7 @@ flex-direction: column;
   text-decoration: none;
   background-color: #E8C7A5;
   color: white;
-  padding: 10px 50px;
+  padding: 10px 15px;
   border-radius: 6px;
   font-weight: 600;
   box-shadow: 5px -5px 5px #d2863583;
@@ -226,8 +229,9 @@ flex-direction: column;
 
 #JustHead {
   width: 60%;
-  height: 200px;
+  min-height: 25%;
   margin-top: 350px;
+  padding-top: 30px;
   font-size: 80px;
   text-align: center;
 }
