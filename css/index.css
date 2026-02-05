@@ -1,3 +1,9 @@
+/****************************
+**** DESKTOP STYLE **********
+****************************/
+
+/* BODY OF THE WEBSITE */
+
 body {
   background-color: #121313;
   color: #E8C7A5;
@@ -5,10 +11,35 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:10px;
+  background:#E8C7A5;
+  color:#121313;
+  padding:8px 12px;
+  border-radius:6px;
+  z-index:10000;
+}
+.skip-link:focus{ 
+  left:10px; 
+}
+
 footer {
   text-align: center;
   margin-top: 100px;
 }
+
+h2{
+  font-size: 30px;
+  text-align: center;
+  margin: 90px 0 80px;
+  font-weight: 800;
+  color:#E8C7A5;
+}
+
+/* NAVIGATION (logo + buttons + social media pictures)_*/
+
 #Allog {
   height: 15px;
   width: auto;
@@ -23,7 +54,7 @@ footer {
   position: fixed;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  top: 0;
+  top: 0; 
   left: 0;
   right: 0;
 }
@@ -51,12 +82,17 @@ footer {
   white-space: nowrap;
   margin: 15px 10px;
 }
+
+/* HERO SECTION (Background + buttons) */
+
 .Buttons {
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  margin-top: auto;
+  margin-bottom: 25%;
+  margin-right: 5%;
 }
 .Button {
   text-decoration: none;
@@ -75,7 +111,7 @@ footer {
 
 #background1 {
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url("https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/christopher-gower-m_HRfLhgABo-unsplash.jpg");
@@ -85,31 +121,15 @@ footer {
   color: white;
   text-align: center;
   font-style: inherit;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
 }
-h1 {
+.ButtonsHeader {
   font-size: 45px;
 }
-.ExpHeaders {
-  margin-top: -10px;
-}
 
-h2{
-  font-size: 30px;
-  text-align: center;
-  margin: 90px 0 80px;
-  font-weight: 800;
-  color:#E8C7A5;
-  
-}
-
-h3{
-  font-size: 22px;
-  margin: 0 0 10px 0;
-  font-weight: 800;
-  color:#E8C7A5;
-  text-align: left;
-  
-}
+/*  ABOUT ME SECTION */
 
 #About {
   margin-right: 20px;
@@ -136,18 +156,12 @@ h3{
   margin: 30px 20px;
   text-align: center;
 }
-.about-text {
-  background-color: rgba(7, 37, 47, 0.765);
-  border-radius: 10px;
-  padding: 20px 20px 20px 20px;
-  flex: 2;
-  box-shadow: inset 5px -5px 5px #e8c7a592,
-  7px -5px 5px #e8c7a55a;
-}
+
 .Pavel-text,
 .Anton-text,
 .Ekaterina-text,
-.Evgeny-text {
+.Evgeny-text,
+.about-text {
   background-color: rgba(7, 37, 47, 0.765);
   border-radius: 10px;
   padding: 20px 20px 20px 20px;
@@ -169,69 +183,385 @@ h3{
   border-radius: 100px;
   box-shadow: 0px 0px 10px #E8C7A5;
 }
+
+/* EXPERIENCE SECTION */
+
 #ExpSection {
   background-image: url(https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/new%20back.png);
-  height: 750px;
+  min-height: 750px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start; 
+  
 }
+
+.ExpHeaders {
+  font-size: 22px;
+  font-weight: 800;
+  color:#E8C7A5;
+  text-align: left;
+}
+
 .ExpMe{
-  width: 65%;
-  margin-right: 0;
-  margin-bottom: 40px;
-  margin-top: 30px;
+width: 70%;
+ margin-right: 20px;
 }
+
 .MainInfo{
-  width: 65%;
+  margin-right: 20px;
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  grid-auto-flow: column;
+  gap: 5px;
+  grid-auto-flow: row;
   grid-template-rows: repeat(3, auto);
-
 }
+/* CONNECT SECTION */
 
 #Connect {
   background-image:
   linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
   url(https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/NewBack.png
 );
-height: 750px;
-background-position: center;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-  
+  height: 750px;
+  background-position: center;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 200px min-content;
+  align-content: end;
+  justify-items: center;
+  font-size: 60px;
 } 
 
-.ContInfo {
-  width: 60%;
-  height: 250px;
+#JustHead {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  width: 70%;
+  text-align: center;
+  justify-self: start;
+
+}
+
+.ContInfo{
+  grid-row: 2;
+  grid-column: 1 / -1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-around;
+  justify-self: start;
+  width: 60%;
+  margin: 40px;
 }
 
 .SocialMedia {
   text-decoration: none;
   background-color: #E8C7A5;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 25px;
   border-radius: 6px;
   font-weight: 600;
   box-shadow: 5px -5px 5px #d2863583;
-  
 }
 
+/****************************
+**** MOBILE STYLE **********
+****************************/
+
+  @media(max-width: 500px) {
+#nav {
+    padding: 0 0px;
+  }
+
+#nav li { 
+    display: none;
+  }
+
+#nav li:nth-child(1),
+#nav li:nth-child(7),
+#nav li:nth-child(8),
+#nav li:nth-child(9){
+    display: flex;
+  }
+
+.ButtonsHeader {
+  font-size: 35px;
+}
+.Buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 65%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.Button {
+  display: flex;
+  flex: 1 1 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align:center;
+  padding: 14px 0;
+  box-sizing: border-box;
+}
+#AboutMe {
+  flex-direction: column;
+}
+#AboutMe2 {
+  flex-direction: column;
+}
+#ExpSection {
+  background-image: url(https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/new%20back.png);
+  background-position: left;
+  background-size: cover;
+  min-height: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.ExpHeaders {
+  font-size: 20px;  
+  text-align: left;
+}
+
+.ExpMe{
+width: 90%;
+margin-right: 5px;
+}
+
+.MainInfo{
+  margin-right: 5px;
+  width: 90%;
+  gap: 5px;
+}
+#Connect {
+  max-height: 750px;
+  background-position: 80% center;
+  grid-template-rows: 200px min-content;
+  justify-items: center;
+  font-size: 50px;
+} 
 #JustHead {
-  width: 60%;
-  min-height: 25%;
-  margin-top: 350px;
-  padding-top: 30px;
+  width: 90%;
+  justify-self: center;
+}
+
+.ContInfo{
+  width: 90%;
+  justify-content: center;
+  margin: 0 0 15px 15px;
+  gap: 10px;
+}
+
+.SocialMedia {
+  padding: 1px 3px;
+}
+footer {
+  font-size: 10px;
+  margin-top: 100px;
+}
+
+  }
+
+/****************************
+**** TABLET STYLE **********
+****************************/
+
+@media (min-width: 501px) and (max-width: 1000px) {
+
+#nav li { 
+  display: none;
+}
+
+#nav li:nth-child(1),
+#nav li:nth-child(2),
+#nav li:nth-child(3),
+#nav li:nth-child(4),
+#nav li:nth-child(5),
+#nav li:nth-child(6){
+    display: flex;
+  }
+
+.ButtonsHeader {
+  font-size: 45px;
+  margin-top: 10%;
+}
+
+.Buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35%;
+  justify-content: center;
+  margin: 10% 10% 0 10%;
+}
+
+.about-text,
+.Pavel-text,
+.Anton-text,
+.Ekaterina-text,
+.Evgeny-text {
+  flex: 1 1 0;
+}
+
+#ExpSection {
+  background-size: cover;
+  min-height: 750px;
+  background-repeat: no-repeat;
+  width: 100%;
+  align-items: flex-end;
+  font-size: 15px;
+}
+
+.ExpMe{
+width: 65%;
+margin-right: 5%;
+margin-top: 3%;
+}
+
+.MainInfo{
+  margin-right: 5%;
+  width: 65%;
+  gap: 10px;
+}
+
+.ExpHeaders {
+  font-size: 20px;  
+  text-align: left;
+  margin-top: -8px;
+}
+#Connect {
+  max-height: 750px;
+  background-position: 80% center;
+  grid-template-rows: 200px min-content;
+  font-size: 60px;
+} 
+
+.ContInfo{
+  width: 90%;
+  justify-content: flex-start;
+  margin: 0 0 15px 15px;
+  gap: 20px;
+}
+
+.SocialMedia {
+  padding: 5px 25px;
+}
+
+footer {
+  font-size: 15px;
+  margin-top: 100px;
+}
+}
+
+/****************************
+**** SMALL LAPTOP STYLE **********
+****************************/
+
+@media (min-width: 1001px) and (max-width: 1700px) {
+
+  .ExpHeaders {
+  font-size: 22px;  
+  margin-top: 13px;
+}
+}
+
+/****************************
+**** BIG SCREENS STYLE **********
+****************************/
+
+@media (min-width: 1701px) and (max-width: 4000px) {
+#nav {
+  font-size: 30px;
+}
+h2{ 
+  font-size: 50px;
+}
+#Allog {
+  height: 30px;
+  width: auto;
+}
+.ButtonsHeader {
+  font-size: 120px;
+  min-height: 500px;
+  padding-top: 5%;
+}
+.Buttons {
+  font-size: 40px;
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.Button {
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align:center;
+  padding: 30px 200px;
+  font-size: 40px;
+  box-sizing: border-box;
+}
+
+.about-text,
+.Pavel-text,
+.Anton-text,
+.Ekaterina-text,
+.Evgeny-text {
+  font-size: 30px;
+}
+
+#ExpSection {
+  background-image: url(https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/new%20back.png);
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 1200px;
+  align-items: flex-end;
+  justify-content: flex-start; 
+  font-size: 30px;
+}
+
+.ExpHeaders {
+  font-size: 50px;  
+  text-align: left;
+  margin-top: 25px;
+
+}
+
+.ExpMe{
+width: 80%;
+margin-right: 2%;
+}
+
+
+.MainInfo{
+  width: 80%;
+  margin-right: 2%;
+  gap: 25px;
+}
+
+
+
+#Connect {
+  min-height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+#JustHead {
   font-size: 80px;
-  text-align: center;
+  width: 60%;
+}
+
+.SocialMedia {
+  padding: 10px 80px;
+}
+
 }
