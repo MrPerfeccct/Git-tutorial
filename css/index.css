@@ -66,7 +66,7 @@ h2{
   margin-left: auto;
 }
 
-#nav li:nth-child(7) {
+#nav li:nth-child(8) {
   margin-left: auto;
 }
 
@@ -304,9 +304,9 @@ margin-right: 20px;
   line-height: 1;
 }
 
-/* CONNECT SECTION */
+/* SOCIALS SECTION */
 
-#Connect {
+#Socials {
   background-image:
   linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
   url("https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/NewBack.png");
@@ -350,6 +350,194 @@ margin-right: 20px;
   box-shadow: 5px -5px 5px #d2863583;
 }
 
+/* LEAVE A MESSAGE SECTION */
+
+#backForm {
+  background-image: url("https://raw.githubusercontent.com/MrPerfeccct/Git-tutorial/main/Back_for_form_x3.png");
+  background-position: left;
+  background-size: cover;
+  min-height: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+#leave_message {
+  background: rgba(7, 37, 47, 0.038);
+  border: 1px solid rgba(232, 199, 165, 0.10);
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.45), 
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);  
+  border-radius: 10px;
+  width: max(40%, 280px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.form-header {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 37, 47, 0.22),
+    rgba(7, 37, 47, 0.08)
+  );
+  border-bottom: 1px solid rgba(232, 199, 165, 0.12);
+  height: 120px;
+  display: flex;
+  width: 100%;
+  color: #E8C7A5;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;  
+}
+
+.form-body{
+  width: 100%;
+  padding: 22px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 18px;
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field.full{
+  grid-column: 1 / -1;
+}
+
+.form-body label{
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(232, 199, 165, 0.85);
+}
+
+.form-body input,
+.form-body textarea{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border-radius: 12px;
+
+  background: rgba(7, 37, 47, 0.45);
+  border: 1px solid rgba(232, 199, 165, 0.18);
+  color: #E8C7A5;
+
+  outline: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 10px 24px rgba(0,0,0,0.25);
+}
+
+.form-body textarea{
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-body input::placeholder,
+.form-body textarea::placeholder{
+  color: rgba(232, 199, 165, 0.45);
+}
+
+.form-body input:focus,
+.form-body textarea:focus{
+  border-color: rgba(216, 181, 122, 0.7);
+  box-shadow:
+    0 0 0 3px rgba(216, 181, 122, 0.18),
+    0 10px 24px rgba(0,0,0,0.25);
+}
+
+.actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+}
+
+.submit-btn{
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: linear-gradient(180deg, #D8B57A, #B8894B);
+  color: #121313;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+#messages {
+  width: min(90%, 1300px);
+  margin: 40px auto 80px;
+}
+
+#messages ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+  display: grid;
+  gap: 14px;
+}
+
+#messages li{
+  background: rgba(7, 37, 47, 0.55);
+  border: 1px solid rgba(232, 199, 165, 0.10);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px 14px;
+  align-items: center
+
+}
+
+#messages li a:hover{
+  text-decoration: underline;
+}
+
+#messages li span{
+  color: rgba(232, 199, 165, 0.85);
+  line-height: 1.4; 
+}
+
+#messages li button{
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(232,199,165,0.30);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: max(10%, 80px);
+  justify-self: end;
+}
+
+#messages li button:hover{
+  border-color: rgba(216, 181, 122, 0.8);
+}
+
+#messages li span,
+#messages li a{
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -373,9 +561,9 @@ footer {
   }
 
 #nav li:nth-child(1),
-#nav li:nth-child(7),
 #nav li:nth-child(8),
-#nav li:nth-child(9){
+#nav li:nth-child(9),
+#nav li:nth-child(10){
     display: flex;
   }
 
@@ -419,6 +607,7 @@ footer {
   justify-content: flex-start; 
 }
 
+
 .ExpHeaders {
   font-size: 20px;  
   text-align: left;
@@ -434,13 +623,19 @@ margin-right: 5px;
   width: 90%;
   gap: 5px;
 }
-#Connect {
+#Socials {
   max-height: 750px;
   background-position: 80% center;
   grid-template-rows: 200px min-content;
   justify-items: center;
   font-size: 50px;
 } 
+
+#backForm {
+  background-position: 30% center;
+  
+}
+
 #JustHead {
   width: 90%;
   justify-self: center;
@@ -456,7 +651,15 @@ margin-right: 5px;
 .SocialMedia {
   padding: 1px 3px;
 }
-
+.form-header {
+  text-align: center; 
+}
+.form-body{
+    grid-template-columns: 1fr;
+  }
+.actions{
+    justify-content: center;
+  }
   }
 
 /****************************
@@ -525,12 +728,15 @@ margin-top: 3%;
   text-align: left;
   margin-top: -8px;
 }
-#Connect {
+#Socials {
   max-height: 750px;
   background-position: 80% center;
   grid-template-rows: 200px min-content;
   font-size: 60px;
 } 
+#backForm {
+  background-position: 30% center;
+}
 
 .ContInfo{
   width: 90%;
@@ -634,13 +840,16 @@ margin-right: 2%;
   gap: 25px;
 }
 
-
-
-#Connect {
+#Socials {
   min-height: 1200px;
   background-repeat: no-repeat;
   background-size: cover;
 } 
+#backForm {
+  min-height: 1200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #JustHead {
   font-size: 80px;
