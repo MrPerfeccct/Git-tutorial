@@ -79,6 +79,20 @@ h2{
   margin: 15px 10px;
 }
 
+#nav a:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 8px #E8C7A5);
+
+}
+
+.BlackPictures:hover {
+  transition: 0.3s ease;
+  filter: invert(1) drop-shadow(0 0 8px #E8C7A5);
+  transform: scale(1.1);
+}
+
+
 /* HERO SECTION (Background + buttons) */
 
 .Buttons {
@@ -97,6 +111,11 @@ h2{
   font-weight: 650;
   letter-spacing: 0.2px;
   border: 1px solid transparent;
+}
+.Button:hover {
+transform: scale(1.1);
+transition: 0.3s ease;
+filter: drop-shadow(0 0 8px #E8C7A5);
 }
 
 .offer{
@@ -350,6 +369,11 @@ margin-right: 20px;
   box-shadow: 5px -5px 5px #d2863583;
 }
 
+.SocialMedia:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 8px #E8C7A5);
+}
 /* LEAVE A MESSAGE SECTION */
 
 #backForm {
@@ -479,6 +503,12 @@ margin-right: 20px;
   box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
 
+.submit-btn:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 8px #E8C7A5);
+}
+
 #messages {
   width: min(90%, 1300px);
   margin: 40px auto 80px;
@@ -528,7 +558,9 @@ margin-right: 20px;
 }
 
 #messages li button:hover{
-  border-color: rgba(216, 181, 122, 0.8);
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 8px #E8C7A5);
 }
 
 #messages li span,
