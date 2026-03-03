@@ -83,3 +83,29 @@ messageForm.addEventListener("submit", function(event) {
     toggleMessagesVisibility();
     messageForm.reset();
 });
+const projectSection = document.getElementById("ProjectsSection");
+const projectList = projectSection.querySelector("ul");
+
+
+fetch("https://api.github.com/users/MrPerfeccct/repos")
+  .then(rep => {
+      if (!rep.ok) {
+        throw new Error(`HTTP error! status: ${rep.status}`);
+      }
+      return rep.json();
+    })
+    .then(repositories => {
+    console.log(repositories);
+    for (let i = 0; i < repositories.length; i++) {
+      let project = document.createElement("li");
+      let link = document.createElement("a");
+      link.href = repositories[i].html_url;
+      link.textContent = repositories[i].name;
+      link.rel = "noopener noreferrer";
+      link.target = "_blank";
+      project.appendChild(link);
+      projectList.appendChild(project);
+  }
+    })
+  .catch(error => console.error("Failed to fetch repositories:", error));
+
