@@ -446,7 +446,7 @@ margin-right: 20px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 40px;
+  padding: 60px;
   box-sizing: border-box;
 }
 
@@ -729,6 +729,8 @@ margin-right: 5px;
 
 #backForm {
   background-position: 30% center;
+  padding: 20px;
+  justify-content: center;
   
 }
 
